@@ -3,5 +3,11 @@ name = "React & React Native Snippets"
 version = "1.0.0"
 schema_version = 1
 authors = ["rahul <rahul.khan.suvo@gmail.com>"]
-description = "Snippets for React 17–19, React Native, Redux Toolkit, React Router v6, and modern JavaScript/TypeScript. Includes components, hooks, imports, prop-types, tests, and more."
-repository = ""
+description = "Modern snippets for React 17–19, React Native, Redux Toolkit, React Router v6, and JavaScript/TypeScript. Focused on function components, hooks, TypeScript, and current patterns."
+repository = "https://github.com/RahulKhanSuvo/zed-editor-react-snippets"
+
+snippets = [
+  "./snippets/javascript.json",
+  "./snippets/typescript.json",
+  "./snippets/tsx.json",
+]

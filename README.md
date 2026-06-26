@@ -1,6 +1,8 @@
 # React & React Native Snippets for Zed
 
-197 snippets for React 17–19, React Native, Redux Toolkit, React Router v6, and modern JavaScript/TypeScript — now available in the [Zed editor](https://zed.dev).
+119 modern snippets for React 17–19, React Native, Redux Toolkit, React Router v6, and modern JavaScript/TypeScript — now available in the [Zed editor](https://zed.dev).
+
+This collection focuses on current React patterns: function components, hooks, TypeScript, React Native functional components, Redux Toolkit, and React Router v6. Legacy class components, PropTypes, and `connect`-based Redux snippets have been removed.
 
 
 ---
@@ -12,7 +14,7 @@
 3. Search for **React & React Native Snippets** and click **Install**
 
 Or install as a dev extension locally:
-- Click **Install Dev Extension** and point it at the `zed-react-javascript-snippets/` directory.
+- Click **Install Dev Extension** and point it at the `zed-extension/` directory.
 
 ---
 
@@ -20,8 +22,7 @@ Or install as a dev extension locally:
 
 | File type | Snippet file |
 |-----------|-------------|
-| `.js` | `javascript.json` |
-| `.jsx` | `jsx.json` |
+| `.js` / `.jsx` | `javascript.json` |
 | `.ts` | `typescript.json` |
 | `.tsx` | `tsx.json` |
 
@@ -37,12 +38,7 @@ Or install as a dev extension locally:
 | `rfce` | React Functional Export Component |
 | `rafc` | React Arrow Function Component |
 | `rafce` | React Arrow Function Export Component |
-| `rcc` | React Class Component |
-| `rce` | React Class Export Component |
-| `rpc` | React Pure Component |
 | `rmc` | React Memo Component |
-| `rfcp` | React Functional Component with PropTypes |
-| `rafcp` | React Arrow Function Component with PropTypes |
 
 ### TypeScript React Components
 
@@ -52,8 +48,7 @@ Or install as a dev extension locally:
 | `tsrfce` | TypeScript React Functional Export Component |
 | `tsrafc` | TypeScript React Arrow Function Component |
 | `tsrafce` | TypeScript React Arrow Function Export Component |
-| `tsrcc` | TypeScript React Class Component |
-| `tsrce` | TypeScript React Class Export Component |
+
 
 ### React Native Components
 
@@ -62,11 +57,6 @@ Or install as a dev extension locally:
 | `rnfc` | React Native Functional Component |
 | `rnfce` | React Native Functional Export Component |
 | `rnfcs` | React Native Functional Component with Styles |
-| `rnc` | React Native Class Component |
-| `rnce` | React Native Class Export Component |
-| `rncs` | React Native Component with Styles |
-| `rnpc` | React Native Pure Component |
-| `rnpce` | React Native Pure Component Export |
 | `rnss` | React Native StyleSheet |
 | `rni` | React Native import |
 
@@ -93,10 +83,8 @@ Or install as a dev extension locally:
 | Prefix | Description |
 |--------|-------------|
 | `imr` | `import React from 'react'` |
-| `imrc` | `import React, { Component } from 'react'` |
 | `imrm` | `import React, { memo } from 'react'` |
 | `imrd` | `import ReactDOM from 'react-dom'` |
-| `impt` | `import PropTypes from 'prop-types'` |
 | `imd` | `import { $2 } from '$1'` |
 | `ima` | `import * as $2 from '$1'` |
 | `imp` | `import $1 from '$2'` |
@@ -113,7 +101,6 @@ Or install as a dev extension locally:
 | `rdxselect` | Redux selector |
 | `rdxapi` | RTK Query `createApi` |
 | `rdxthunk` | `createAsyncThunk` |
-| `imrc` | `import { connect } from 'react-redux'` |
 
 ### React Router v6
 
@@ -144,19 +131,7 @@ Or install as a dev extension locally:
 | `cli` | `console.info()` |
 | `clt` | `console.time()` / `console.timeEnd()` |
 
-### PropTypes
 
-| Prefix | Description |
-|--------|-------------|
-| `pta` | `PropTypes.array` |
-| `ptb` | `PropTypes.bool` |
-| `ptf` | `PropTypes.func` |
-| `ptn` | `PropTypes.number` |
-| `pts` | `PropTypes.string` |
-| `pto` | `PropTypes.object` |
-| `ptnd` | `PropTypes.node` |
-| `ptel` | `PropTypes.element` |
-| `ptany` | `PropTypes.any` |
 
 ### Tests (Jest / React Testing Library)
 
