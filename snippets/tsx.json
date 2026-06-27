@@ -1097,5 +1097,16 @@
       ""
     ],
     "description": "React Server Action directive"
+  },
+  "tryCatch": {
+    "prefix": "tryc",
+    "body": [
+      "try {",
+      "  ${1:${TM_SELECTED_TEXT:content}}",
+      "} catch (error) {",
+      "  ${2:console.error(error)}",
+      "}"
+    ],
+    "description": "Creates a try-catch block"
   }
 }

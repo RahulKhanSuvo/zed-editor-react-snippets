@@ -14,7 +14,7 @@ This collection focuses on current React patterns: function components, hooks, T
 3. Search for **React & React Native Snippets** and click **Install**
 
 Or install as a dev extension locally:
-- Click **Install Dev Extension** and point it at the `zed-extension/` directory.
+- Click **Install Dev Extension** and point it at the `zed-/` directory.
 
 ---
 
@@ -130,6 +130,7 @@ Or install as a dev extension locally:
 | `clt` | `console.table()` |
 | `cli` | `console.info()` |
 | `clt` | `console.time()` / `console.timeEnd()` |
+| `tryc` | `try-catch` block |
 
 
 
