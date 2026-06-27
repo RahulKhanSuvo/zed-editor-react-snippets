@@ -1108,5 +1108,256 @@
       "}"
     ],
     "description": "Creates a try-catch block"
+  },
+  "asyncFunction": {
+    "prefix": "afn",
+    "body": [
+      "async function ${1:FunctionName}() {",
+      "  ${2:await someFunction()}",
+      "}"
+    ],
+    "description": "Creates an async function"
+  },
+  "tryCatchWithLog": {
+    "prefix": "trycl",
+    "body": [
+      "try {",
+      "  ${1:try block}",
+      "} catch (error) {",
+      "  console.error(\"Error: ${2:error message}\", error)"
+    ],
+    "description": "Creates a try-catch block with error logging"
+  },
+  "mapArray": {
+    "prefix": "mapa",
+    "body": [
+      "${1:array}.map((${2:item}) => {",
+      "  ${3:// return transformed item}",
+      "})"
+    ],
+    "description": "Array map snippet"
+  },
+  "filterArray": {
+    "prefix": "filtera",
+    "body": [
+      "${1:array}.filter((${2:item}) => {",
+      "  ${3:// return boolean}",
+      "})"
+    ],
+    "description": "Array filter snippet"
+  },
+  "forEachArray": {
+    "prefix": "forEacha",
+    "body": [
+      "${1:array}.forEach((${2:item}) => {",
+      "  ${3:// do something}",
+      "})"
+    ],
+    "description": "Array forEach snippet"
+  },
+  "stringMethods": {
+    "prefix": "str",
+    "body": [
+      "${1:string}.toLowerCase()",
+      "${2:string}.toUpperCase()",
+      "${3:string}.includes('${4:substring}')",
+      "${5:string}.replace('${6:old}', '${7:new}')",
+      "${8:string}.split('${9:separator}')"
+    ],
+    "description": "String methods"
+  },
+  "objectMethods": {
+    "prefix": "obj",
+    "body": [
+      "Object.keys(${1:object})",
+      "Object.values(${2:object})",
+      "Object.entries(${3:object})",
+      "Object.freeze(${4:object})",
+      "Object.seal(${5:object})"
+    ],
+    "description": "Object methods"
+  },
+  "conditional": {
+    "prefix": "cond",
+    "body": [
+      "if (${1:condition}) {",
+      "  ${2:// true block}",
+      "} else {",
+      "  ${3:// false block}",
+      "}"
+    ],
+    "description": "Conditional statement"
+  },
+  "switchStatement": {
+    "prefix": "switch",
+    "body": [
+      "switch (${1:expression}) {",
+      "  case '${2:value}':",
+      "    ${3:// handle case}",
+      "    break;",
+      "  default:",
+      "    ${4:// default case}",
+      "}"
+    ],
+    "description": "Switch statement"
+  },
+  "fetchRequest": {
+    "prefix": "fetch",
+    "body": [
+      "fetch('${1:url}', {",
+      "  method: '${2:GET}',",
+      "  headers: {",
+      "    'Content-Type': 'application/json'",
+      "  },",
+      "  body: JSON.stringify(${3:payload})",
+      "})",
+      "  .then(response => response.json())",
+      "  .then(data => {",
+      "    ${4:// handle data}",
+      "  })",
+      "  .catch(error => {",
+      "    console.error('Error:', error)",
+      "  })"
+    ],
+    "description": "Fetch request"
+  },
+  "dateTime": {
+    "prefix": "date",
+    "body": [
+      "new Date()",
+      "new Date(${1:year}, ${2:month})",
+      "Date.now()",
+      "Date.parse('${1:dateString}')",
+      "new Date().toISOString()",
+      "new Date().toLocaleString()"
+    ],
+    "description": "Date and time methods"
+  },
+  "mathOperations": {
+    "prefix": "math",
+    "body": [
+      "Math.abs(${1:number})",
+      "Math.ceil(${1:number})",
+      "Math.floor(${1:number})",
+      "Math.round(${1:number})",
+      "Math.sqrt(${1:number})",
+      "Math.random()",
+      "Math.max(${1:num1}, ${2:num2})",
+      "Math.min(${1:num1}, ${2:num2})"
+    ],
+    "description": "Math operations"
+  },
+  "errorHandling": {
+    "prefix": "err",
+    "body": [
+      "try {",
+      "  ${1:// code}",
+      "} catch (error) {",
+      "  console.error('Error:', error)",
+      "  throw error;",
+      "}",
+      "",
+      "try {",
+      "  ${2:// code}",
+      "} catch (error) {",
+      "  console.warn('Warning:', error)",
+      "} finally {",
+      "  ${3:// cleanup}",
+      "}"
+    ],
+    "description": "Error handling"
+  },
+  "domManipulation": {
+    "prefix": "dom",
+    "body": [
+      "document.getElementById('${1:id}')",
+      "document.querySelector('${2:selector}')",
+      "document.querySelectorAll('${3:selector}')",
+      "document.createElement('${4:tagName}')",
+      "document.body.appendChild(${5:element})",
+      "document.removeChild(${6:parent}, ${7:child})"
+    ],
+    "description": "DOM manipulation"
+  },
+  "formHandling": {
+    "prefix": "form",
+    "body": [
+      "const form = document.getElementById('${1:formId}')",
+      "form.addEventListener('submit', (event) => {",
+      "  event.preventDefault()",
+      "  const formData = new FormData(form)",
+      "  const data = Object.fromEntries(formData)",
+      "  console.log('Form data:', data)",
+      "})",
+      "",
+      "const input = document.getElementById('${2:inputId}')",
+      "input.addEventListener('change', (event) => {",
+      "  const value = event.target.value",
+      "  console.log('Input value:', value)",
+      "})"
+    ],
+    "description": "Form handling"
+  },
+  "localStorage": {
+    "prefix": "local",
+    "body": [
+      "localStorage.setItem('${1:key}', JSON.stringify(${2:value}))",
+      "const ${3:key} = localStorage.getItem('${4:key}')",
+      "localStorage.removeItem('${5:key}')",
+      "localStorage.clear()",
+      "JSON.parse(localStorage.getItem('${6:key}'))"
+    ],
+    "description": "Local storage"
+  },
+  "eventHandling": {
+    "prefix": "event",
+    "body": [
+      "element.addEventListener('${1:eventType}', (event) => {",
+      "  ${2:// event handler}",
+      "})",
+      "",
+      "element.removeEventListener('${3:eventType}', ${4:handler})",
+      "",
+      "const handle${5:EventName} = (event) => {",
+      "  ${6:// handler logic}",
+      "}"
+    ],
+    "description": "Event handling"
+  },
+  "moduleExports": {
+    "prefix": "export",
+    "body": [
+      "export default ${1:FunctionName}",
+      "export { ${2:FunctionName} }",
+      "export { ${3:FunctionName} as ${4:Alias} }",
+      "import { ${5:FunctionName} } from '${6:module}'",
+      "import { ${7:FunctionName} as ${8:Alias} } from '${9:module}'",
+      "import * as ${10:ModuleName} from '${11:module}'"
+    ],
+    "description": "Module imports/exports"
+  },
+  "testingUtils": {
+    "prefix": "test",
+    "body": [
+      "describe('${1:test suite}', () => {",
+      "  beforeEach(() => {",
+      "    ${2:// setup}",
+      "  })",
+      "  afterEach(() => {",
+      "    ${3:// teardown}",
+      "  })",
+      "  it('${4:test case}', () => {",
+      "    ${5:// test assertion}",
+      "  })",
+      "  it('${6:async test case}', async () => {",
+      "    ${7:// async test assertion}",
+      "  })",
+      "})",
+      "",
+      "expect(${8:value}).toBe(${9:expected})",
+      "expect(${10:array}).toContain(${11:item})",
+      "expect(${12:promise}).resolves.toBeDefined()"
+    ],
+    "description": "Testing utilities"
   }
 }

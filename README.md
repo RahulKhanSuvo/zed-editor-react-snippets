@@ -60,6 +60,75 @@ Or install as a dev extension locally:
 | `rnss` | React Native StyleSheet |
 | `rni` | React Native import |
 
+### Async Snippets
+
+| Prefix | Description |
+|--------|-------------|
+| `afn` | Async function |
+| `trycl` | Try-catch with error log |
+
+### Array Methods
+
+| Prefix | Description |
+|--------|-------------|
+| `mapa` | Array map |
+| `filtera` | Array filter |
+| `forEacha` | Array forEach |
+
+### Date & Time
+
+| Prefix | Description |
+|--------|-------------|
+| `date` | Date and time methods |
+
+### Math
+
+| Prefix | Description |
+|--------|-------------|
+| `math` | Math operations |
+
+### Error Handling
+
+| Prefix | Description |
+|--------|-------------|
+| `err` | Error handling |
+
+### DOM Manipulation
+
+| Prefix | Description |
+|--------|-------------|
+| `dom` | DOM manipulation |
+
+### Form Handling
+
+| Prefix | Description |
+|--------|-------------|
+| `form` | Form handling |
+
+### Local Storage
+
+| Prefix | Description |
+|--------|-------------|
+| `local` | Local storage |
+
+### Event Handling
+
+| Prefix | Description |
+|--------|-------------|
+| `event` | Event handling |
+
+### Module Imports/Exports
+
+| Prefix | Description |
+|--------|-------------|
+| `export` | Module imports/exports |
+
+### Testing Utilities
+
+| Prefix | Description |
+|--------|-------------|
+| `test` | Testing utilities |
+
 ### Hooks
 
 | Prefix | Description |
